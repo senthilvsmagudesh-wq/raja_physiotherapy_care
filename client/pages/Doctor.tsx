@@ -10,7 +10,7 @@ import {
   ArrowRight,
   Stethoscope
 } from "lucide-react";
-import doctorImage from "@assets/generated_images/Doctor_professional_headshot_portrait_1b61ad5d.png";
+import doctorImage from "../src/attached_assets/generated_images/Doctor_professional_headshot_portrait_1b61ad5d.png";
 
 export default function Doctor() {
   const expertise = [
