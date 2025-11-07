@@ -27,17 +27,11 @@ export default defineConfig({
       alias: {
         "@": path.resolve(__dirname, "./client"),
       },
-    },
-    server: {
-    proxy: {
-      '/api': {
-        target: 'http://localhost:3000',
-        changeOrigin: true,
       },
-    },
-    fs: {
-      strict: true,
-      deny: ["**/.*"],
-    },
-  },
-});
+      server: {
+        fs: {
+          strict: true,
+          deny: ["**/.*"],
+        },
+      },
+    });
