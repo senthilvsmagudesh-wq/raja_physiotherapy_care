@@ -1,6 +1,6 @@
 import { Card, CardContent } from "../components/ui/card";
 import { Heart, Target, Shield, Users, Award, Building2 } from "lucide-react";
-import { ReactComponent as ReceptionImage } from "../src/attached_assets/generated_images/Clinic_reception_area_33a4318c.png";
+
 
 export default function About() {
   const values = [
@@ -168,11 +168,7 @@ export default function About() {
 
             <div className="order-first lg:order-last">
               <div className="rounded-2xl overflow-hidden shadow-xl">
-                <ReceptionImage 
-                  alt="Modern clinic reception area" 
-                  className="w-full h-auto object-cover"
-                  data-testid="img-facility"
-                />
+                {/* Image removed due to missing asset */}
               </div>
             </div>
           </div>

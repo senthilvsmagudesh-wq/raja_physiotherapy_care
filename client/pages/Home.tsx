@@ -16,7 +16,7 @@ import {
   ArrowRight,
   Phone
 } from "lucide-react";
-import { ReactComponent as HeroImage } from "../src/attached_assets/generated_images/Doctor_in_clinic_hero_80beda9d.png";
+
 
 export default function Home() {
   const stats = [
@@ -139,11 +139,7 @@ export default function Home() {
 
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-xl">
-                <HeroImage 
-                  alt="Dr. Raja in modern neurology clinic" 
-                  className="w-full h-auto object-cover"
-                  data-testid="img-hero"
-                />
+                {/* Image removed due to missing asset */}
               </div>
             </div>
           </div>
