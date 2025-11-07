@@ -16,7 +16,7 @@ import {
   ArrowRight,
   Phone
 } from "lucide-react";
-import heroImage from "/attached_assets/generated_images/Doctor_in_clinic_hero_80beda9d.png";
+import heroImage from "../src/attached_assets/generated_images/Doctor_in_clinic_hero_80beda9d.png";
 
 export default function Home() {
   const stats = [

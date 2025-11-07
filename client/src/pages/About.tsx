@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Target, Shield, Users, Award, Building2 } from "lucide-react";
-import receptionImage from "/attached_assets/generated_images/Clinic_reception_area_33a4318c.png";
+import receptionImage from "../src/attached_assets/generated_images/Clinic_reception_area_33a4318c.png";
 
 export default function About() {
   const values = [
