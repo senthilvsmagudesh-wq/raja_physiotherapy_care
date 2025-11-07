@@ -4,5 +4,4 @@ node_modules
 .gitignore
 design_guidelines.md
 drizzle.config.ts
-attached_assets
 server
