@@ -1,21 +1,21 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
+import { Card, CardContent } from "../components/ui/card";
+import { Button } from "../components/ui/button";
+import { Input } from "../components/ui/input";
+import { Textarea } from "../components/ui/textarea";
+import { Label } from "../components/ui/label";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { useToast } from "@/hooks/use-toast";
+} from "../components/ui/select";
+import { useToast } from "../hooks/use-toast";
 import { useMutation } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
+import { apiRequest } from "../lib/queryClient";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { appointmentSchema, type Appointment, servicesData } from "@shared/schema";
+import { appointmentSchema, type Appointment, servicesData } from "../../shared/schema";
 import { Calendar, Clock, CheckCircle, AlertCircle } from "lucide-react";
 import { useState } from "react";
 
