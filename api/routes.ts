@@ -22,9 +22,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
       // Send email using Resend
       const { data, error } = await resend.emails.send({
-        from: "RAJA Health Care <onboarding@resend.dev>",
-        to: ["info@rajahealthcare.com"], // Change to actual clinic email
-        replyTo: appointmentData.email,
+        from: process.env.RESEND_FROM_EMAIL!,
+        to: [process.env.RESEND_TO_EMAIL!], // Change to actual clinic email
         subject: `New Appointment Request from ${appointmentData.fullName}`,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -129,8 +128,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
       // Send email using Resend
       const { data, error } = await resend.emails.send({
-        from: "RAJA Health Care <onboarding@resend.dev>",
-        to: ["info@rajahealthcare.com"], // Change to actual clinic email
+        from: process.env.RESEND_FROM_EMAIL!,
+        to: [process.env.RESEND_TO_EMAIL!], // Change to actual clinic email
         replyTo: contactData.email,
         subject: `Contact Form: ${contactData.subject}`,
         html: `

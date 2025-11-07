@@ -1,0 +1,8 @@
+node_modules
+.env
+.git
+.gitignore
+design_guidelines.md
+drizzle.config.ts
+attached_assets
+server
